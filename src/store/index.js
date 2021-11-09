@@ -8,5 +8,10 @@ export default createStore({
     toggleAuthModal: (state) => {
       state.authModalShow = !state.authModalShow
     }
+  },
+  getters: {
+    authModalShow: (state) => {
+      return state .authModalShow
+    }
   }
 })
